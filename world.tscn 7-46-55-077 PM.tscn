@@ -1,11 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://dppoabwepfb25"]
+[gd_scene load_steps=3 format=3 uid="uid://c5vh25sk7o2fh"]
 
 [ext_resource type="Script" path="res://script/world.cs" id="1_bbiwm"]
-[ext_resource type="TileSet" uid="uid://bg3yg0ujuf20v" path="res://data/world.tres" id="2_nbxnt"]
+[ext_resource type="TileSet" uid="uid://ht5noap55pia" path="res://scenes/world.tres" id="2_t15jd"]
 
 [node name="proc_world" type="Node2D"]
 script = ExtResource("1_bbiwm")
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource("2_nbxnt")
+tile_set = ExtResource("2_t15jd")
 format = 2

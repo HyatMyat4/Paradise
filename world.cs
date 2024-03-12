@@ -96,12 +96,20 @@ public partial class world : Node2D
 
 		SceneTreeTimer timer = GetTree().CreateTimer(3.0);
 
-
 		await ToSignal(timer, "timeout");
 
-		// After the delay, do something
 		GD.Print("30 seconds delay completed.");
 
+		if (leven == final_seed_leven)
+		{
+			return;
+		}
+		else
+		{
+			Vector2I new_atlas = new Vector2I(atlas_coordinates.X + 1, atlas_coordinates.Y);
+			atlas_coordinates = new_atlas;
+		}
+		HandleSeed(tile_mouse_position, atlas_coordinates, leven + 1, final_seed_leven);
 	}
 
 
